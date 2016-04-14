@@ -11,7 +11,7 @@ var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 
 //Config
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://heroku_11xp07m1:pfvndf5g8a8df3bu667qtal8pt@ds023500.mlab.com:23500/heroku_11xp07m1');
+mongoose.connect(process.env.MONGODB_URI );
 var port = process.env.PORT || 8080;
 var base_url = '/api/';
 
